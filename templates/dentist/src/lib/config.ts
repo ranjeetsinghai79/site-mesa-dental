@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "dentist",
-  name: "Bright Smile Dental",
-  tagline: "Gentle Care. Beautiful Results.",
-  phone: "(555) 345-6789",
-  phoneHref: "tel:+15553456789",
-  email: "hello@brightsmiledelta.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Lathrop", "Banta"],
-  license: "CA DDS #54321",
-  since: "2010",
-  google_rating: "4.9",
-  review_count: "418",
-  emergency: true,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Mesa Dental",
+    tagline: "Smile Confidently. Live Freely.",
+    phone: "(480) 396-9900",
+    phoneHref: "tel:+14803969900",
+    email: "info@mesadental.com",
+    address: "123 Smile Ave",
+    city: "Mesa",
+    serviceAreas: ["Mesa, AZ", "Gilbert, AZ", "Chandler, AZ", "Tempe, AZ"],
+    license: "AZ Dental Board #12345",
+    since: "2005",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: true,
+    theme: "navy",
+    niche: "dentist",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Teeth Whitening",
-    desc: "Professional Zoom whitening — up to 8 shades brighter in one visit. Take-home kits also available.",
-    urgent: false,
-  },
-  {
-    icon: "shield-check",
-    title: "Preventive Cleanings",
-    desc: "Comprehensive exams, digital X-rays, and thorough cleanings. Semi-annual visits for a lifetime of healthy teeth.",
-    urgent: false,
-  },
-  {
-    icon: "smile",
-    title: "Dental Implants",
-    desc: "Permanent tooth replacement that looks and feels natural. Single crowns to full arch restorations.",
-    urgent: false,
-  },
-  {
-    icon: "align-center",
-    title: "Invisalign & Braces",
-    desc: "Straighten your smile discreetly. Clear aligners for teens and adults. Free orthodontic consultation.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Emergency Dental",
-    desc: "Severe pain, broken tooth, lost crown? Same-day emergency slots reserved daily. Call us first.",
-    urgent: true,
-  },
-  {
-    icon: "star",
-    title: "Cosmetic Dentistry",
-    desc: "Veneers, bonding, gum contouring, and smile makeovers. Your dream smile is closer than you think.",
-    urgent: false,
-  },
-],
+    { icon: "star", title: "Dental Implants", desc: "Restore your smile and confidence with durable, natural-looking dental implants.", urgent: false },
+    { icon: "heart", title: "Dentures", desc: "Custom-fitted dentures provide comfort and functionality for a complete smile.", urgent: false },
+    { icon: "clock", title: "Emergency Dentistry", desc: "Immediate care for dental emergencies to relieve pain and address urgent issues.", urgent: true },
+    { icon: "sparkles", title: "Invisalign", desc: "Achieve a straighter smile discreetly with clear, comfortable Invisalign aligners.", urgent: false },
+    { icon: "thermometer", title: "Dental Cleaning", desc: "Maintain optimal oral health with professional cleanings and preventative care.", urgent: false },
+    { icon: "scissors", title: "Teeth Whitening", desc: "Brighten your smile several shades with our safe and effective teeth whitening treatments.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Jennifer P.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "Hadn't been to a dentist in 6 years due to anxiety. Dr. Kim was so patient and gentle. Now I actually look forward to my appointments.",
-  },
-  {
-    name: "Carlos R.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Got Invisalign here. The whole process was explained clearly, results were amazing. Staff made every visit easy and fun.",
-  },
-  {
-    name: "Melissa T.",
-    location: "Manteca, CA",
-    stars: 5,
-    text: "Chipped a tooth Saturday morning. They got me in within 2 hours. Fixed it perfectly, matched my other teeth exactly. Incredible service.",
-  },
-],
+    { name: "Sarah L.", location: "Mesa, AZ", stars: 5, text: "I had a dental emergency last month, and Mesa Dental got me in the same day. Dr. Smith was incredibly kind and professional, explaining everything clearly. The pain was gone, and I felt so much relief. Highly recommend their compassionate and efficient service!" },
+    { name: "Mark T.", location: "Gilbert, AZ", stars: 5, text: "Getting my Invisalign here was the best decision. The team made the whole process easy and comfortable. My teeth look amazing, and I feel so much more confident. They truly focus on your goals and make you feel like a partner in your journey." },
+    { name: "Jessica P.", location: "Chandler, AZ", stars: 5, text: "I've been coming to Mesa Dental for years for my regular cleanings. The staff is always friendly, and the hygienists are thorough yet gentle. They use advanced technology, and I always leave feeling like my teeth are sparkling clean and healthy. A truly wonderful dental experience every time." }
+  ],
 
   trustBadges: [
-  "Accepting New Patients",
-  "Most Insurance Accepted",
-  "Anxiety-Free Dentistry",
-  "Digital X-Rays",
-  "Same-Day Emergencies",
-  "Family & Cosmetic Dentist",
-],
+    "ADA Member", "Same-Day Emergency Care", "5-Star Rated", "Advanced Technology", "Personalized Care"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2090,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 16,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1500, label: "Happy Smiles", suffix: "+", decimals: 0 },
+    { value: 18, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI receptionist books appointments, handles insurance questions, sends reminders — via call, SMS, or WhatsApp. Any hour, any day."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We offer same-day appointments for dental emergencies to address your needs quickly." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Clear, upfront pricing with no hidden fees, so you know what to expect." },
+    { icon: "award", title: "Certified Professionals", desc: "Our team consists of highly trained and certified dental experts dedicated to your care." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "Your comfort and satisfaction are our top priorities; we strive for excellent results." },
+    { icon: "phone", title: "Easy Scheduling", desc: "Convenient online and phone scheduling to fit your busy lifestyle." },
+    { icon: "shield-check", title: "Advanced Technology", desc: "Utilizing the latest dental technology for precise diagnoses and effective treatments." }
+  ],
 
-  formServiceOptions: [
-  "Teeth Whitening",
-  "Preventive Cleanings",
-  "Dental Implants",
-  "Invisalign & Braces",
-  "Emergency Dental",
-  "Cosmetic Dentistry"
-],
+  formServiceOptions: ["Dental Implants", "Dentures", "Emergency Dentistry", "Invisalign", "Dental Cleaning", "Braces and clear aligners", "Dental Veneers", "Teeth Whitening"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
